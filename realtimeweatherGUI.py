@@ -27,7 +27,7 @@ def get_weather(event=None):
         city_label.config(text="도시 이름을 입력해주세요")
         return
 
-    api_key = "725b65b4c73314d17ea6f1a03f422080"
+    api_key = "여기에_발급받은_API_키를_입력하세요"
     base_url = "http://api.openweathermap.org/data/2.5/weather"
     params = {'q': city_name, 'appid': api_key, 'units': 'metric', 'lang': 'kr'}
 
@@ -239,5 +239,6 @@ desc_label.pack(pady=10)
 # 습도 등 세부 정보 (작게)
 detail_label = tk.Label(content_frame, text="", font=FONT_DETAIL, bg=BG_COLOR, fg="gray")
 detail_label.pack(side="bottom", pady=20)
+
 
 window.mainloop()
